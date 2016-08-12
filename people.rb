@@ -24,7 +24,11 @@ end
 ic = Instructor.new("Chris")
 
 ic.greeting
+ic.teach
 
 sc = Student.new("Christina")
 
 sc.greeting
+sc.learn
+# sc.teach = NoMethodError because the teach method is an instance method for
+# the Instructor class, not the Student class
